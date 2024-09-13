@@ -41,8 +41,9 @@ STATICFILES_DIRS = (str(BASE_DIR / "static"),)
 # Connect to our database remotely
 import dj_database_url
 
-DATABASE_URL = env.str("DATABASE_URL")
+
+DATABASE_PUBLIC_URL ="postgresql://postgres:UHDFiLOslomDZIRxhFvbKRapuKRauaUq@junction.proxy.rlwy.net:32600/railway"
 
 DATABASES = {
-    "default": dj_database_url.config(default=DATABASE_URL),
+    "default": dj_database_url.config(default=DATABASE_PUBLIC_URL),
 }
