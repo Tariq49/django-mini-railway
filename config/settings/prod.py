@@ -8,9 +8,9 @@ environ.Env.read_env(str(BASE_DIR / ".env.prod"))
 SECRET_KEY = env.str("SECRET_KEY")
 DEBUG = env.bool("DEBUG")
 
-ALLOWED_HOSTS = ["mini-django-railway-production.up.railway.app"]
+ALLOWED_HOSTS = ["django-mini-railway-production.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = [
-    "https://mini-django-railway-production.up.railway.app"
+    "https://django-mini-railway-production.up.railway.app"
 ]  # modify later
 
 MIDDLEWARE = MIDDLEWARE + ["whitenoise.middleware.WhiteNoiseMiddleware"]
